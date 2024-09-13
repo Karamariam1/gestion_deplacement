@@ -1,0 +1,103 @@
+/* src/css/my-login.css */
+body.my-login-page {
+    background-color: #FFFFFF; /* Fond de page */
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.brand {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF; /* Couleur de fond du logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-wrapper {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.card.fat {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+    background-color: #FFFFFF; /* Fond des sections importantes */
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid #CCCCCC; /* Bordure légère pour un look propre */
+}
+
+.card .card-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #000000; /* Couleur du texte */
+    text-align: center;
+}
+
+.form-control {
+    border: 2px solid #CCCCCC; /* Couleur des bordures des champs */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #FF0000; /* Couleur de fond des boutons */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #FF6666; /* Couleur au survol des boutons */
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #00FF00; /* Couleur de fond de la case à cocher */
+}
+
+a {
+    color: #000000; /* Couleur des liens */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF0000; /* Couleur des liens au survol */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+    font-size: 12px;
+}

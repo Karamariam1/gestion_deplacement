@@ -1,0 +1,263 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #009900;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffffeb; /* Couleur de fond du logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+nav {
+    background-color: #000000;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF0000;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    background-color: #c60e0e;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.summary-item:hover {
+    background-color: #cc000090;
+    transform: scale(1.05);
+}
+
+.requests table, .request-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.requests th, .requests td, .request-details th, .request-details td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: left;
+}
+
+.requests th, .request-details th {
+    background-color: #009900;
+    font-weight: bold;
+}
+
+.requests tr:hover, .request-details tr:hover {
+    background-color: #ff6666a6;
+    cursor: pointer;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actions button, .request-details button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover, .request-details button:hover {
+    background-color: #FF6666;
+}
+
+.request-details .comment-section {
+    margin-top: 10px;
+}
+
+.request-details .comment {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+footer {
+    padding: 1px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #009900;
+    flex-shrink: 0;
+    width: 100%;
+    
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.stats {
+    margin-bottom: 40px;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chart-container {
+    background-color: #F8F8F8;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container canvas {
+    max-width: 100%;
+    height: 200px;
+}
+.history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.history th, .history td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: left;
+}
+
+.history th {
+    background-color: #CCCCCC;
+    font-weight: bold;
+}
+
+.history tr:hover {
+    background-color: #FF6666;
+    cursor: pointer;
+}
+
+
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+.profile button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile button:hover {
+    background-color: #FF6666;
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile label {
+    margin-top: 10px;
+}
+
+.profile input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.profile form button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile form button:hover {
+    background-color: #FF6666;
+}
+

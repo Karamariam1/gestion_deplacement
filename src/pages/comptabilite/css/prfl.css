@@ -1,0 +1,215 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light Grey for page background */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #006400; /* Dark Green */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header .brand img {
+    max-height: 50px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.top-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer; /* Indicates that the image is clickable */
+}
+
+.user-info span {
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.side-nav {
+    width: 250px;
+    background-color: #FFFFFF; /* White for sidebar background */
+    padding: 1em;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Adjust according to the header and footer height */
+}
+
+.side-nav h2 {
+    color: #006400; /* Dark Green for section titles */
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.side-nav a {
+    display: block;
+    color: #333333; /* Dark Grey for text */
+    text-decoration: none;
+    margin: 1em 0;
+    padding: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+.side-nav a:hover {
+    background-color: #FF0000; /* Red for hover effect */
+    color: #FFFFFF;
+}
+
+main {
+    flex: 2;
+    padding: 2em;
+    background-color: #f0f0f0; /* Light Grey for main content background */
+}
+
+footer {
+    background-color: #006400; /* Dark Green */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+.profile button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile button:hover {
+    background-color: #FF6666;
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile label {
+    margin-top: 10px;
+}
+
+.profile input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.profile form button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile form button:hover {
+    background-color: #FF6666;
+}
+
+.profile-history {
+    margin-top: 20px;
+}
+
+.profile-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+.profile-history th, .profile-history td {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.profile-history th {
+    background-color: #006400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.profile-history tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.profile-history tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+#message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+#message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    display: block;
+}
+
+#message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    display: block;
+}

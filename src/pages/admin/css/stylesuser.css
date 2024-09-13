@@ -1,0 +1,289 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light Grey for page background */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #006400; /* Dark Green */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header .brand img {
+    max-height: 50px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.top-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer; /* Indicates that the image is clickable */
+}
+
+.user-info span {
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.side-nav {
+    width: 250px;
+    background-color: #FFFFFF; /* White for sidebar background */
+    padding: 1em;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px); /* Adjust according to the header and footer height */
+}
+
+.side-nav h2 {
+    color: #006400; /* Dark Green for section titles */
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.side-nav a {
+    display: block;
+    color: #333333; /* Dark Grey for text */
+    text-decoration: none;
+    margin: 1em 0;
+    padding: 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+.side-nav a:hover {
+    background-color: #FF0000; /* Red for hover effect */
+    color: #FFFFFF;
+}
+main {
+    flex: 2;
+    padding: 2em;
+    background-color: #f0f0f0; /* Light Grey for main content background */
+}
+.container {
+    flex: 2;
+    padding: 2em;
+    background-color: #f0f0f0; /* Light Grey for main content background */
+}
+
+h1 {
+    color: #006400; /* Dark Green */
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.filter-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter label {
+    margin-right: 0.5em;
+}
+
+.filter input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #006400; /* Dark Green */
+    color: #FFFFFF;
+}
+
+button:hover {
+    background-color: #004d00; /* Darker Green */
+}
+
+.hidden {
+    display: none;
+}
+
+#add-employee-container {
+    display: flex;
+    align-items: center;
+}
+
+#employee-select {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.table-container {
+    margin: 1em 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #006400; /* Dark Green */
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.actions button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions .edit {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.actions .delete {
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-left: 0.5em;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.pagination li {
+    margin: 0 0.5em;
+}
+
+.pagination a {
+    display: block;
+    padding: 0.5em 1em;
+    background-color: #006400; /* Dark Green */
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #004d00;
+}
+
+footer {
+    background-color: #006400; /* Dark Green */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#add-employee-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#add-employee-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-employee-form form div {
+    margin-bottom: 15px;
+}
+
+#add-employee-form label {
+    margin-bottom: 5px;
+}
+
+#add-employee-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-employee-form .button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Space between buttons */
+}
+
+#add-employee-form button {
+    padding: 10px 20px;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-employee-form button[type="button"] {
+    background-color: #dc3545; /* Different color for cancel button */
+}

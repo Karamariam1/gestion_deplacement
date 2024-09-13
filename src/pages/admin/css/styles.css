@@ -1,0 +1,168 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #009900;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF0000;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.manage-users {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.manage-users input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+}
+
+.manage-users button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.manage-users button:hover {
+    background-color: #FF6666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #333333;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #CCCCCC;
+}
+
+.user-form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.user-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form label {
+    margin-top: 10px;
+}
+
+.user-form input, .user-form select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+.user-form button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-form button:hover {
+    background-color: #FF6666;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #009900;
+    flex-shrink: 0;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.stats {
+    margin-bottom: 40px;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chart-container {
+    background-color: #F8F8F8;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container canvas {
+    max-width: 100%;
+    height: 200px;
+}
